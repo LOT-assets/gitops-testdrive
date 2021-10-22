@@ -16,12 +16,4 @@ Target audience: DevOps engineers, Developers, OpenShift administrators, Solutio
 Eqach student must be a OpenShift cluster with cloud-admin user 
 
 ## Content
-The content of workshops is divided on units. Each unit have tree sections (teorical introduction, hands on activities and clossing)
-
-1. [Key concepts (Quick introduction about Kube API, GitOps and CI/CD strategies)](docs/key-concepts.md)
-2. [Installing OpenShift GitOps Operator](docs/installing-gitops.md)
-3. [Register a cluster on ArgoCD](docs/registering-cluster.md)
-4. [Deploying an simple application on Cluster](docs/deploying-apps.md)
-5. [Mantaining "Single Source of Truth"](docs/operations.md)
-6. [Deploying on multiple clusters](docs/adding-cluster.md)
-7. [(Optional) Integring with Continuos Integration Strategy](docs/ci-integration.md)
+The content of the test-drive is available on [Content](docs/content.md)

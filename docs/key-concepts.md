@@ -47,4 +47,5 @@ GitOps gives you tools and a framework to take DevOps practices, like collaborat
 
 Developers can work in the code repositories they already know, while operations can put the other necessary pieces into place.
 
+[Go to content](content.md)
 [Go to readme](../README.md)
