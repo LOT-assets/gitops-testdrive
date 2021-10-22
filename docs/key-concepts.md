@@ -1,7 +1,9 @@
-# Pre-requisities
+# Key concepts
+
+## Pre-requisities
 To understand the GitOps, you require understand the basis concepts of linux, containers and kubernetes. An good site to get this knolegde is https://kubebyexample.com/
 
-# What is GitOps?
+## What is GitOps?
 GitOps is a set of practices to manage infrastructure and application configurations using Git, an open source version control system. GitOps works by using Git as a single source of truth for declarative infrastructure and applications.
 
 GitOps uses Git pull requests to automatically manage infrastructure provisioning and deployment. The Git repository contains the entire state of the system so that the trail of changes to the system state are visible and auditable.
@@ -10,14 +12,14 @@ GitOps is built around the developer experience and helps teams manage infrastru
 
 Weaveworks is credited with creating the term GitOps.
 
-# How to get started with GitOps
+## How to get started with GitOps
 To get started with GitOps you need infrastructure that can be declaratively managed. Because of this, GitOps is often used as an operating model for Kubernetes and cloud native application development and can enable continuous deployment for Kubernetes.
 
 But using Kubernetes is not a requirement of GitOps. GitOps is a technique that can be applied to other infrastructure and deployment pipelines.   
 
 GitOps can be used to build development pipelines, code applications, manage configurations, provision Kubernetes clusters, and deploy on Kubernetes or container registries.
 
-# What is a GitOps workflow?
+## What is a GitOps workflow?
 GitOps can be considered an evolution in Infrastructure as Code (IaC) that uses Git as the version control system for infrastructure configurations. IaC often follows a declarative approach to infrastructure management by defining the desired state of the system and tracking the system’s actual state.
 
 As with IaC, GitOps requires you to *declaratively describe the desired state of the system.* By using declarative tools, all of your configuration files and source code can be version controlled in Git.
@@ -38,9 +40,11 @@ Using pull requests and a version control system like Git introduces visibility 
 
 GitOps workflows can increase productivity and the velocity of development and deployments, while improving the stability and reliability of systems.
 
-# How is GitOps different from DevOps?
+## How is GitOps different from DevOps?
 GitOps and DevOps do share some of the same principles and goals. DevOps is about cultural change and providing a way for development teams and operations teams to work together collaboratively.
 
 GitOps gives you tools and a framework to take DevOps practices, like collaboration, CI/CD, and version control, and apply them to infrastructure automation and application deployment. 
 
 Developers can work in the code repositories they already know, while operations can put the other necessary pieces into place.
+
+[Go to readme](../README.md)
