@@ -4,7 +4,7 @@ First, review the main concepts required to understand the scope of components i
 
 1. [Key concepts (Quick introduction about Kube API, GitOps and CI/CD strategies)](key-concepts.md)
 
-The hands-on is divided into units. Each unit have three sections (instructor-led  introduction, hands-on activities, and closing)
+The hands-on activities are divided into units. Each unit have three sections (instructor-led  introduction, hands-on activities, and closing)
 
 2. [Installing OpenShift GitOps Operator](installing-gitops.md)
 3. [Register a cluster on ArgoCD](registering-cluster.md)

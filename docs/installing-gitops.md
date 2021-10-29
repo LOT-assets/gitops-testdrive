@@ -48,19 +48,19 @@ Once installed validate that an ArgoCD instance was deployed in the openshift-gi
 
 # Accessing to OpenShift GitOps Webconsole
 
-In Application menu select **Cluster Argo CD**
+In the Application menu select **Cluster Argo CD**
 
 ![Installing Operator](/img/installingC6.png "Installing Operator")
 
-ArgoCD is preconfigured for authentiction using OpenShift permissions. 
+ArgoCD is preconfigured for authentication using OpenShift permissions. 
 
 ![Installing Operator](/img/installingC7.png "Installing Operator")
 
-Then, you can start the application usign your current user and password.
+Then, you can start the application using your current user and password.
 
 ![Installing Operator](/img/installingC8.png "Installing Operator")
 
-Additionally you can grant access to the user via Authorization interface.
+Additionally, you can grant access to the user via the Authorization interface.
 
 ![Installing Operator](/img/installingD2.png "Installing Operator")
 
@@ -70,7 +70,7 @@ And finally, you can access to OpenShift GitOps interface.
 
 ## Accesing to GitOps via argocd cli
 
-The next steps guide in the installation and use of argocd user cli.
+The next steps guide in the installation and use of Argocd user Cli.
 
 
 

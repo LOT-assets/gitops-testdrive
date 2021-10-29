@@ -1,7 +1,7 @@
 # Key concepts
 
 ## Pre-requisities
-To understand the GitOps, you require understand the basis concepts of linux, containers and kubernetes. An good site to get this knolegde is https://kubebyexample.com/
+To understand the GitOps concept, you require to understand the basic concepts of Linux, containers, and Kubernetes. A good site to get this knowledge is https://kubebyexample.com/
 
 ## What is GitOps?
 GitOps is a set of practices to manage infrastructure and application configurations using Git, an open source version control system. GitOps works by using Git as a single source of truth for declarative infrastructure and applications.
