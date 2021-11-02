@@ -46,7 +46,7 @@ Once installed validate that an ArgoCD instance was deployed in the openshift-gi
 
 ## Accesing to OpenShift GitOps on OpenShift 4.8 or bellow
 
-In version previous to OCP 4.9 ArgoCD is not integrated with OpenShift Authentication, then in these clusters you require get the admin password of ArgoCD, in this case, please, go to OpenShift-gitops project
+In version previous to OCP 4.9 ArgoCD is not integrated with OpenShift Authentication by default, then in these clusters you require get the admin password of ArgoCD, in this case, please, go to OpenShift-gitops project
 
 ![Installing Operator](/img/installingE1.png "Installing Operator")
 
