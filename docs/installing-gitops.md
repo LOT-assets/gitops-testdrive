@@ -6,15 +6,13 @@ Connect with your administrator user to OpenShift and find what namespaces are a
 
 ![Installing Operator](/img/installingA1.png "Installing Operator")
 
-In the option Overview -> Projects
+In the option `Overview -> Projects` Identify if the petclinic project exist:
 
-Identify if the nginx-basic project does not exist:
-
-![Installing Operator](/img/installingA2.png "Installing Operator")
+![Installing Operator](/img/installingAB2.png "Installing Operator")
 
 If it exists, delete it
 
-![Installing Operator](/img/installingA3.png "Installing Operator")
+![Installing Operator](/img/installingAB3.png "Installing Operator")
 
 ## Install the OpenShft Pipelines Operator
 
@@ -46,6 +44,28 @@ Once installed validate that an ArgoCD instance was deployed in the openshift-gi
 
 ![Installing Operator](/img/installingC5.png "Installing Operator")
 
+## Accesing to Argo on OpenShift 4.8 or bellow
+
+In version previous to OCP 4.9 ArgoCD is not integrated with OpenShift Authentication, then in these cluster you require get the admin password of ArgoCD, in this case, please, go to OpenShift-gitops project
+
+![Installing Operator](/img/installingE1.png "Installing Operator")
+
+![Installing Operator](/img/installingE2.png "Installing Operator")
+
+After, get the secrets Submenu into Workloads Menu
+
+![Installing Operator](/img/installingE3.png "Installing Operator")
+
+Then, search openshift-gitops-cluster secret
+
+![Installing Operator](/img/installingE4.png "Installing Operator")
+
+Finally on the Data section **copy to clipboard** the admin.password 
+
+![Installing Operator](/img/installingE5.png "Installing Operator")
+
+**Note:** If you is using OCP 4.9+ you can use the OpenShift credentials
+
 # Accessing to OpenShift GitOps Webconsole
 
 In the Application menu select **Cluster Argo CD**
@@ -67,12 +87,6 @@ Additionally, you can grant access to the user via the Authorization interface.
 And finally, you can access to OpenShift GitOps interface.
 
 ![Installing Operator](/img/installingD3.png "Installing Operator")
-
-## Accesing to GitOps via argocd cli
-
-The next steps guide in the installation and use of Argocd user Cli.
-
-
 
 [Go to content](content.md)
 [Go to readme](../README.md)
