@@ -7,10 +7,8 @@ First, review the main concepts required to understand the scope of components i
 The hands-on activities are divided into units. Each unit have three sections (instructor-led  introduction, hands-on activities, and closing)
 
 2. [Installing OpenShift GitOps Operator](installing-gitops.md)
-3. [Register a cluster on ArgoCD](registering-cluster.md)
-4. [Deploying an simple application on Cluster](deploying-apps.md)
+3. [Preparing the namespace to deploy](configuring-namespace.md)
+4. [Deploying a simple application on Cluster](deploying-apps.md)
 5. [Mantaining "Single Source of Truth"](operations.md)
-6. [Deploying on multiple clusters](adding-cluster.md)
-7. [(Optional) Integrating with Continuous Integration Strategy](ci-integration.md)
 
 [Go to readme](../README.md)
