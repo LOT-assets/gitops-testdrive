@@ -68,9 +68,9 @@ When tha application is syncronized, go to OpenShift and explore the application
 
 On OpenShift go to Developer perspective and identify all objects created
 
-What objects was created?
-Where is located the application?
-What is the application objective?
+* What objects was created?
+* Where is located the application?
+* What is the application objective?
 
 [Go to content](content.md)
 [Go to readme](../README.md)
