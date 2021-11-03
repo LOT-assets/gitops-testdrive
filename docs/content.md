@@ -9,6 +9,6 @@ The hands-on activities are divided into units. Each unit have three sections (i
 2. [Installing OpenShift GitOps Operator](installing-gitops.md)
 3. [Preparing the namespace to deploy](configuring-namespace.md)
 4. [Deploying a simple application on Cluster](deploying-apps.md)
-5. [Mantaining "Single Source of Truth"](operations.md)
+5. [Maintaining "Single Source of Truth"](operations.md)
 
 [Go to readme](../README.md)
