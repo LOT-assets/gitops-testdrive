@@ -1,0 +1,17 @@
+{{- range untilStep 1 (int .Values.Users) 1 }}
+{{ $n := . }}
+---
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: user{{$n}}
+users:
+  - user{{$n}}
+{{- end }}
+---
+apiVersion: user.openshift.io/v1
+kind: Group
+metadata:
+  name: opentlc-mgr
+users:
+  - opentlc-mgr

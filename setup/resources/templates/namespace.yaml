@@ -1,0 +1,10 @@
+{{- range untilStep 1 (int .Values.Users) 1 }}
+{{ $n := . }}
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  annotations:
+    openshift.io/requester: user{{$n}}
+  name: user{{$n}}
+{{- end }}

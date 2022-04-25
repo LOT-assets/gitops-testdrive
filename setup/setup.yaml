@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: gitops-workshop
+  namespace: openshift-gitops
+spec:
+  syncPolicy:
+    automated:
+      prune: true
+  destination:
+    server: 'https://kubernetes.default.svc'
+  project: default
+  source:
+    helm:
+      parameters:
+        - name: Users
+          value: '0'
+    path: setup/resources
+    repoURL: 'https://github.com/LOT-assets/gitops-testdrive.git'
+    targetRevision: HEAD
