@@ -7,15 +7,29 @@ The goal in this section is navigate and deploy this applicaction on the cluster
 
 # Start ArgoCD Console
 
-Go to ArgoCD web console using Applications Menu from OpenShift
+Login on Your OpenShift Cluster using userX/*password*
 
-![Deploying Application](/img/installingC6.png "Deploying Application")
+![Deploying Application](/img/deployappsA01.png "Deploying Application")
 
-Logging using OpenShift Login, confirm your credentials and the authorization data
+You can navigate the Quick Tour to understand the menus and main options from the developer's perspective.
+
+![Deploying Application](/img/deployappsA02.png "Deploying Application")
+
+Select the project and go to the Topology menu
+
+![Deploying Application](/img/deployappsA03.png "Deploying Application")
+
+Navigate and look at the description of the pods currently deployed on the right menu.
+
+![Deploying Application](/img/deployappsA04.png "Deploying Application")
+
+ArgoCD installs the CDR required to deploy and maintain ArgoCD clusters. In the current environment, already, there is a cluster deployed with the necessary permission to admin the application on your namespace.
+
+On GitOps Server deployment, you can identify on OpenShift Route that exposes the ArgoCD URL; please open the URL on another tab, logging using OpenShift Login, and confirm your credentials and the authorization data.
 
 ![Deploying Application](/img/installingC7.png "Deploying Application")
 
-Verify that has access to ArgoCD console
+Verify that has access to the ArgoCD console
 
 ![Deploying Application](/img/installingD3.png "Deploying Application")
 
@@ -23,7 +37,7 @@ Create a new application
 
 ![Deploying Application](/img/deployappsA1.png "Deploying Application")
 
-Write the follow data in General section:
+Write the following data in the General section:
 
 * Application name: petclinic
 * Project: default
@@ -42,7 +56,9 @@ Complete the source and destination
 *Destination*
 
 * Cluster URL: https://kubernetes.default.svc
-* Namespace: petclinic
+* Namespace: *userX*
+
+Note: replace userX by your current namespace
 
 ![Deploying Application](/img/deployappsA3.png "Deploying Application")
 
