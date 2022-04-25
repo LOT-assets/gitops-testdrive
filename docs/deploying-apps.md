@@ -1,7 +1,7 @@
 # Deploying a simple application on Cluster
 
 The application to deploy is PetClinic, this application is stored on 
-https://github.com/jcepedav/gitops-testdrive on petclinic-app/02-petclinic
+https://github.com/LOT-assets/gitops-testdrive.git on petclinic-app/02-petclinic
 
 The goal in this section is navigate and deploy this applicaction on the cluster.
 
@@ -11,7 +11,7 @@ Go to ArgoCD web console using Applications Menu from OpenShift
 
 ![Deploying Application](/img/installingC6.png "Deploying Application")
 
-Logging using user admin and admin password or OpenShift Login
+Logging using OpenShift Login, confirm your credentials and the authorization data
 
 ![Deploying Application](/img/installingC7.png "Deploying Application")
 
@@ -35,7 +35,7 @@ Complete the source and destination
 
 *Source*
 
-* Repository URL: https://github.com/jcepedav/gitops-testdrive
+* Repository URL: https://github.com/LOT-assets/gitops-testdrive.git
 * Revision: HEAD
 * Path: petclinic-app/02-petclinic
 
