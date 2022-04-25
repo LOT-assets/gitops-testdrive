@@ -38,7 +38,7 @@ What happened with the application?
 
 In this section go to adjust the application to you own Github repository and promote changes from the repository
 
-Navigate to https://github.com/jcepedav/gitops-testdrive
+Navigate to https://github.com/LOT-assets/gitops-testdrive.git
 
 ![Single Source of Truth](/img/operationsF1.png "Single Source of Truth")
 
