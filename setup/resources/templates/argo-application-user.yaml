@@ -17,6 +17,6 @@ spec:
   project: default
   source:
     path: setup/argo-platform
-    repoURL: 'https://github.com/pkstaz/gitops-testdrive.git'
-    targetRevision: develop
+    repoURL: 'https://github.com/LOT-assets/gitops-testdrive.git'
+    targetRevision: HEAD
 {{- end }}
