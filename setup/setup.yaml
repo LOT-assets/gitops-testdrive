@@ -16,5 +16,5 @@ spec:
         - name: Users
           value: '0'
     path: setup/resources
-    repoURL: 'https://github.com/pkstaz/gitops-testdrive.git'
+    repoURL: 'https://github.com/LOT-assets/gitops-testdrive.git'
     targetRevision: HEAD
