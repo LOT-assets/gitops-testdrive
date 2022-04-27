@@ -6,5 +6,12 @@ apiVersion: v1
 metadata:
   annotations:
     openshift.io/requester: user{{$n}}
-  name: user{{$n}}
+  name: user{{$n}}-openshift-gitops
+---
+kind: Namespace
+apiVersion: v1
+metadata:
+  annotations:
+    openshift.io/requester: user{{$n}}
+  name: user{{$n}}-petclinic
 {{- end }}

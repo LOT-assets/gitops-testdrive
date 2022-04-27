@@ -1,20 +1,22 @@
+{{- range untilStep 1 (int .Values.Users) 1 }}
+{{ $n := . }}
+---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: gitops-workshop
+  name: 'user{{$n}}-argocd'
   namespace: openshift-gitops
 spec:
   syncPolicy:
     automated:
       prune: true
+      selfHeal: true
   destination:
+    namespace: user{{$n}}-openshift-gitops
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    helm:
-      parameters:
-        - name: Users
-          value: '0'
-    path: setup/resources
+    path: setup/argo-platform
     repoURL: 'https://github.com/pkstaz/gitops-testdrive.git'
-    targetRevision: HEAD
+    targetRevision: develop
+{{- end }}

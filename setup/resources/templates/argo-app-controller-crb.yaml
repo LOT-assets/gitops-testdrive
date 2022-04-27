@@ -1,0 +1,16 @@
+{{- range untilStep 1 (int .Values.Users) 1 }}
+{{ $n := . }}
+---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: user{{$n}}-argocd-application-controller-admin
+subjects:
+  - kind: ServiceAccount
+    name: argocd-application-controller
+    namespace: user{{$n}}-openshift-gitops
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+  {{- end }}
